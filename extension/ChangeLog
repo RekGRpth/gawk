@@ -1,5 +1,10 @@
 2019-03-17         Arnold D. Robbins     <arnold@skeeve.com>
 
+	* inplace.c (_XOPEN_SOURCE): Define to 500 so will build
+	on Solaris.
+
+2019-03-17         Arnold D. Robbins     <arnold@skeeve.com>
+
 	* readdir.c: Change to use stat when dir info is 'u'. Bump version.
 	* readdir_test.c: Ditto.
 	* readdir.3am: Document same.
