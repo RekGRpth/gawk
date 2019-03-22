@@ -27,9 +27,15 @@
 #include <config.h>
 #endif
 
+#if defined(__sun)
+# undef _XOPEN_SOURCE
+# define _XOPEN_SOURCE 700
+#else
 #ifndef _XOPEN_SOURCE
-# define _XOPEN_SOURCE 500	/* minimum level, esp. for Solaris */
+# define _XOPEN_SOURCE 1
 #endif
+#endif
+
 #ifndef _XOPEN_SOURCE_EXTENDED
 # define _XOPEN_SOURCE_EXTENDED 1
 #endif
