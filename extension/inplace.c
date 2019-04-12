@@ -3,7 +3,7 @@
  */
 
 /*
- * Copyright (C) 2013-2015, 2017, 2018, 2019 the Free Software Foundation, Inc.
+ * Copyright (C) 2013-2015, 2017, 2018, the Free Software Foundation, Inc.
  *
  * This file is part of GAWK, the GNU implementation of the
  * AWK Programming Language.
@@ -27,15 +27,9 @@
 #include <config.h>
 #endif
 
-#if defined(__sun)
-# undef _XOPEN_SOURCE
-# define _XOPEN_SOURCE 700
-#else
 #ifndef _XOPEN_SOURCE
 # define _XOPEN_SOURCE 1
 #endif
-#endif
-
 #ifndef _XOPEN_SOURCE_EXTENDED
 # define _XOPEN_SOURCE_EXTENDED 1
 #endif
